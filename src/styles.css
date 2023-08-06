@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  color: #7eaa92;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-evenly;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80vw;
+  text-align: left;
+  padding-block: 12px;
+  border-bottom: 1px solid #aaa;
+}
+
+td,
+th {
+  width: 20%;
+}
+tr td:nth-child(4) {
+  text-transform: capitalize;
+}
+
+.btn-footer {
+  position: absolute;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15;
+}
+
+.btn-footer button {
+  background-color: #4477ce;
+  margin: 6px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid #4477ce;
+  color: whitesmoke;
+  font-weight: 300;
+}
+
+.btn-footer button:hover {
+  cursor: pointer;
+  background-color: rgb(2, 26, 70);
+  border: 2px solid rgb(2, 26, 70);
+}
+
+.editUser {
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+}
+.btn-update {
+  background-color: #e41594;
+}
+.btn-update:hover {
+  background-color: #f79bd3;
+  color: #111;
+}
+.table-edit-style {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400;
+  background-color: #241468;
+  border: 1px solid rgb(170, 4, 115);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.checked {
+  background-color: #ffdbc3;
+}
+
+.checked:hover {
+  background-color: #ffdbc3;
+}
+.icons-styled {
+  cursor: pointer;
+}
+.btn-Selected {
+  margin: 70px 0px 10px 25px;
+  background-color: #e41594;
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #fff;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-Selected:hover {
+  background-color: #f79bd3;
+  color: #111;
+}
+/* ------ Media Query ------- */
+@media screen and (max-width: 600px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
+  }
+}
